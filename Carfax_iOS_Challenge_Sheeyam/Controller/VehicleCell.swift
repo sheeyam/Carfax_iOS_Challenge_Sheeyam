@@ -23,8 +23,9 @@ class VehicleCell: UITableViewCell {
 
     // Make Call to the Dealer
     @IBAction func makeCallToDealer(_ sender: Any) {
-        let dealerNumber = VehicleDealerContact.titleLabel
-        guard let number = URL(string: "tel://\(String(describing: dealerNumber))") else { return }
+        let dealerNumberStr = VehicleDealerContact.titleLabel?.text
+        let dealerNumber = dealerNumberStr?.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+        guard let number = URL(string: "tel://\(dealerNumber!)") else { return }
         UIApplication.shared.open(number)
     }
     
@@ -34,9 +35,21 @@ class VehicleCell: UITableViewCell {
     
     // Configure Vehicle Cell
     func configureCell(vehicleData: Vehicles) {
+        // Vehicle - Year | Make | Model
         self.VehicleYearMakeModel.text = "\(vehicleData.vehicleYear) \(vehicleData.vehicleMake) \(vehicleData.vehicleModel)"
-        self.VehiclePriceMileageLocation.text = "$\(vehicleData.vehicleListPrice) | \(formatNumber(vehicleData.vehicleMileage)) Mi | \(vehicleData.vehicleLocationCity), \(vehicleData.vehicleLocationState)"
         
+        // vehicle - Price | Location | mileage Details
+        let boldListPriceText  = "$\(vehicleData.vehicleListPrice)"
+        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17)]
+        let attributedString = NSMutableAttributedString(string:boldListPriceText, attributes:attrs)
+        
+        let normalMileageLocationText = " | \(formatNumber(vehicleData.vehicleMileage)) Mi | \(vehicleData.vehicleLocationCity), \(vehicleData.vehicleLocationState)"
+        let normalMileageLocationString = NSMutableAttributedString(string:normalMileageLocationText)
+        
+        attributedString.append(normalMileageLocationString)
+        self.VehiclePriceMileageLocation.attributedText = attributedString
+        
+        // Dealer Phone No Text
         let dealerPhoneNo = PhoneNumberFormatter(phoneNumber: "\(vehicleData.dealerPhone)")
         self.VehicleDealerContact.setTitle("\(dealerPhoneNo!)", for: .normal)
         
