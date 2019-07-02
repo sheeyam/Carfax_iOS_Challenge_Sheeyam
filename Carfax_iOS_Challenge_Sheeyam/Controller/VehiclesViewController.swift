@@ -14,17 +14,29 @@ class VehiclesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // Outlets
     @IBOutlet weak var VehicleTableView: UITableView!
+    @IBOutlet weak var tableActivityWheel: UIActivityIndicatorView!
     
     // Variables
     var vehicles: Vehicles!
     var vehicleArray = [Vehicles]()
-    var vehicle: Vehicle!
+    var refreshControl: UIRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        vehicle = Vehicle()
+        self.tableActivityWheel.startAnimating()
+        // Refresh Control
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        if #available(iOS 10.0, *){
+            VehicleTableView.refreshControl = refreshControl
+        } else {
+            VehicleTableView.addSubview(refreshControl)
+        }
+        
+        // Call Download Function - Service Call
         self.downloadVehicles {
-            print("Data Downloaded")
+            print("Vehicles Data Downloaded")
+            self.tableActivityWheel.stopAnimating()
+            self.tableActivityWheel.isHidden = true
         }
     }
     
@@ -53,6 +65,26 @@ class VehiclesViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
+    // Cell Display Animation
+    var shownIndexes : [IndexPath] = []
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (shownIndexes.contains(indexPath) == false) {
+            shownIndexes.append(indexPath)
+            
+            cell.transform = CGAffineTransform(translationX: 0, y: 40)
+            cell.layer.shadowColor = UIColor.black.cgColor
+            cell.layer.shadowOffset = CGSize(width: 10, height: 10)
+            cell.alpha = 0
+            
+            UIView.beginAnimations("rotation", context: nil)
+            UIView.setAnimationDuration(0.5)
+            cell.transform = CGAffineTransform(translationX: 0, y: 0)
+            cell.alpha = 1
+            cell.layer.shadowOffset = CGSize(width: 0, height: 0)
+            UIView.commitAnimations()
+        }
+    }
+    
     // Function to Download Vehicle Data
     func downloadVehicles(completed: @escaping DownloadCompleteData) {
         Alamofire.request(API_URL).responseJSON { (response) in
@@ -67,6 +99,17 @@ class VehiclesViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
             }
             completed()
+        }
+    }
+    
+    // Refresh Data
+    @objc func refreshData() {
+        self.tableActivityWheel.startAnimating()
+        self.downloadVehicles {
+            print("Vehicles Data Downloaded")
+            self.refreshControl.endRefreshing()
+            self.tableActivityWheel.stopAnimating()
+            self.tableActivityWheel.isHidden = true
         }
     }
 }
