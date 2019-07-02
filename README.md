@@ -31,6 +31,6 @@ The Applicaion displays a list of vehicles with the following information:
   - Unavalabily of a real device so didn't check the calling feature but the code logic is added.
 
 # Author
-  Sheeyam Shellvacumar
-  Houston, TX
-  sheeyam.shellvacumar@gmail.com
+  - Sheeyam Shellvacumar
+  - Houston, TX
+  - sheeyam.shellvacumar@gmail.com
