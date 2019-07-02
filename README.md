@@ -20,6 +20,7 @@ The Applicaion displays a list of vehicles with the following information:
   - MVC Architecture
   - Mac Mojave
   - Storyboard and Autolayouts
+  - Cocoapods
   
 # Improvements
   - Added Refresh Control
