@@ -26,6 +26,8 @@ class VehiclesViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         self.tableActivityWheel.startAnimating()
         // Refresh Control
+        // the color of the label
+        refreshControl.attributedTitle = NSAttributedString(string: "fetching...")
         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         if #available(iOS 10.0, *){
             VehicleTableView.refreshControl = refreshControl
