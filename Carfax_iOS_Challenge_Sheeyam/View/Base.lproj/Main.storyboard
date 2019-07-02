@@ -70,7 +70,6 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="U40-ru-HnZ" firstAttribute="leading" secondItem="rNq-Ld-IyM" secondAttribute="leading" constant="10" id="45p-or-zH3"/>
-                                                <constraint firstAttribute="trailing" secondItem="sJv-2R-AWX" secondAttribute="trailing" constant="10" id="4bG-Z8-pJG"/>
                                                 <constraint firstItem="sJv-2R-AWX" firstAttribute="top" secondItem="rNq-Ld-IyM" secondAttribute="top" constant="10" id="JZq-Uj-dvy"/>
                                                 <constraint firstItem="vkI-th-D7v" firstAttribute="top" secondItem="WDE-v1-AEe" secondAttribute="bottom" constant="5" id="MCu-5R-AtX"/>
                                                 <constraint firstAttribute="trailing" secondItem="U40-ru-HnZ" secondAttribute="trailing" constant="10" id="VBx-Uk-P3F"/>
@@ -82,6 +81,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="WDE-v1-AEe" secondAttribute="trailing" constant="10" id="mgl-Ne-ifr"/>
                                                 <constraint firstItem="U40-ru-HnZ" firstAttribute="top" secondItem="vkI-th-D7v" secondAttribute="bottom" constant="10" id="nfJ-pe-9qX"/>
                                                 <constraint firstItem="sJv-2R-AWX" firstAttribute="leading" secondItem="rNq-Ld-IyM" secondAttribute="leading" constant="10" id="tIY-Rp-RE2"/>
+                                                <constraint firstItem="sJv-2R-AWX" firstAttribute="trailing" secondItem="WDE-v1-AEe" secondAttribute="trailing" id="v21-1W-BbM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
