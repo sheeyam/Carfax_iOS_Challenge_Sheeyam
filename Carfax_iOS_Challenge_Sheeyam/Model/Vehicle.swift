@@ -18,6 +18,7 @@ class Vehicle {
     private var  _vehicleMileage: Int!
     private var  _vehicleLocationCity: String!
     private var  _vehicleLocationState: String!
+    private var  _vehicleTrim: String!
     private var  _dealerPhone: String!
     
     var vehicleYear: Int {
@@ -39,6 +40,13 @@ class Vehicle {
             _vehicleModel = ""
         }
         return _vehicleModel
+    }
+    
+    var vehicleTrim: String {
+        if _vehicleTrim == nil {
+            _vehicleTrim = ""
+        }
+        return _vehicleTrim
     }
     
     var vehicleListPrice: Int {
@@ -95,6 +103,10 @@ class Vehicle {
         
         if let model = vehiclesDict["model"] as? String {
             self._vehicleModel = model
+        }
+        
+        if let trim = vehiclesDict["trim"] as? String {
+            self._vehicleTrim = trim
         }
         
         if let listPrice = vehiclesDict["listPrice"] as? Int {

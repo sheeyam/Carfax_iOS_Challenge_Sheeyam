@@ -35,8 +35,12 @@ class VehicleCell: UITableViewCell {
     
     // Configure Vehicle Cell
     func configureCell(vehicleData: Vehicle) {
-        // Vehicle - Year | Make | Model
-        self.VehicleYearMakeModel.text = "\(vehicleData.vehicleYear) \(vehicleData.vehicleMake) \(vehicleData.vehicleModel)"
+        // Vehicle - Year | Make | Model | trim
+        var trim = " "
+        if vehicleData.vehicleTrim.lowercased() != "unspecified" {
+            trim = "| \(vehicleData.vehicleTrim)"
+        }
+        self.VehicleYearMakeModel.text = "\(vehicleData.vehicleYear) \(vehicleData.vehicleMake) \(vehicleData.vehicleModel) \(trim)"
         
         // vehicle - Price | Location | mileage Details
         let boldListPriceText  = "$\(vehicleData.vehicleListPrice)"
