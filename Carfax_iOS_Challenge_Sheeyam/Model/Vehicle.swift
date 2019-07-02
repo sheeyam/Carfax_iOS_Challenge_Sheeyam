@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Vehicles {
+class Vehicle {
     
     private var  _vehicleYear: Int!
     private var  _vehicleMake: String!

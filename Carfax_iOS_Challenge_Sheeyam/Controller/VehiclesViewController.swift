@@ -17,8 +17,8 @@ class VehiclesViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var tableActivityWheel: UIActivityIndicatorView!
     
     // Variables
-    var vehicles: Vehicles!
-    var vehicleArray = [Vehicles]()
+    var vehicles: Vehicle!
+    var vehicleArray = [Vehicle]()
     var refreshControl: UIRefreshControl = UIRefreshControl()
     
     //View Did Load
@@ -93,7 +93,7 @@ class VehiclesViewController: UIViewController, UITableViewDataSource, UITableVi
             if let dictionary = result.value as? Dictionary<String,AnyObject> {
                 if let list = dictionary["listings"] as? [Dictionary<String,AnyObject>] {
                     for item in list {
-                        let vehicle = Vehicles(vehiclesDict: item)
+                        let vehicle = Vehicle(vehiclesDict: item)
                         self.vehicleArray.append(vehicle)
                     }
                     self.VehicleTableView.reloadData()

@@ -34,7 +34,7 @@ class VehicleCell: UITableViewCell {
     }
     
     // Configure Vehicle Cell
-    func configureCell(vehicleData: Vehicles) {
+    func configureCell(vehicleData: Vehicle) {
         // Vehicle - Year | Make | Model
         self.VehicleYearMakeModel.text = "\(vehicleData.vehicleYear) \(vehicleData.vehicleMake) \(vehicleData.vehicleModel)"
         
