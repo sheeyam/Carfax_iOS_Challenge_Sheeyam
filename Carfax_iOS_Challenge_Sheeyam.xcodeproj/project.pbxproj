@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		6212853E22C9BF4A000F97BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212853D22C9BF4A000F97BF /* AppDelegate.swift */; };
-		6212854022C9BF4A000F97BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212853F22C9BF4A000F97BF /* ViewController.swift */; };
 		6212854322C9BF4A000F97BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6212854122C9BF4A000F97BF /* Main.storyboard */; };
 		6212854522C9BF4B000F97BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6212854422C9BF4B000F97BF /* Assets.xcassets */; };
 		6212854822C9BF4B000F97BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6212854622C9BF4B000F97BF /* LaunchScreen.storyboard */; };
+		6212855022C9BF75000F97BF /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212854F22C9BF75000F97BF /* VehiclesViewController.swift */; };
+		6212855222C9C014000F97BF /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212855122C9C014000F97BF /* VehicleCell.swift */; };
+		6212855622C9CE25000F97BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212855522C9CE25000F97BF /* Constants.swift */; };
+		6212855B22C9DCC8000F97BF /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212855A22C9DCC8000F97BF /* Vehicles.swift */; };
+		BD3014B284BDC4F81F4A4BCF /* Pods_Carfax_iOS_Challenge_Sheeyam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F831BE3DC418772590E370 /* Pods_Carfax_iOS_Challenge_Sheeyam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231B6B7A94974CC302B98B0A /* Pods-Carfax_iOS_Challenge_Sheeyam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carfax_iOS_Challenge_Sheeyam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carfax_iOS_Challenge_Sheeyam/Pods-Carfax_iOS_Challenge_Sheeyam.debug.xcconfig"; sourceTree = "<group>"; };
 		6212853A22C9BF4A000F97BF /* Carfax_iOS_Challenge_Sheeyam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carfax_iOS_Challenge_Sheeyam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6212853D22C9BF4A000F97BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6212853F22C9BF4A000F97BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6212854222C9BF4A000F97BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6212854422C9BF4B000F97BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6212854722C9BF4B000F97BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6212854922C9BF4B000F97BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6212854F22C9BF75000F97BF /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
+		6212855122C9C014000F97BF /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		6212855522C9CE25000F97BF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6212855A22C9DCC8000F97BF /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		A7E376551D9CF2E9E5776C29 /* Pods-Carfax_iOS_Challenge_Sheeyam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carfax_iOS_Challenge_Sheeyam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carfax_iOS_Challenge_Sheeyam/Pods-Carfax_iOS_Challenge_Sheeyam.release.xcconfig"; sourceTree = "<group>"; };
+		B2F831BE3DC418772590E370 /* Pods_Carfax_iOS_Challenge_Sheeyam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carfax_iOS_Challenge_Sheeyam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3014B284BDC4F81F4A4BCF /* Pods_Carfax_iOS_Challenge_Sheeyam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				6212853C22C9BF4A000F97BF /* Carfax_iOS_Challenge_Sheeyam */,
 				6212853B22C9BF4A000F97BF /* Products */,
+				7149E99652C3D576A8A4EE74 /* Pods */,
+				B6CA8522C3592FC038318959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,58 @@
 		6212853C22C9BF4A000F97BF /* Carfax_iOS_Challenge_Sheeyam */ = {
 			isa = PBXGroup;
 			children = (
+				6212855922C9D8E4000F97BF /* Model */,
+				6212855322C9CCC3000F97BF /* View */,
+				6212855422C9CCE6000F97BF /* Controller */,
 				6212853D22C9BF4A000F97BF /* AppDelegate.swift */,
-				6212853F22C9BF4A000F97BF /* ViewController.swift */,
-				6212854122C9BF4A000F97BF /* Main.storyboard */,
+				6212855522C9CE25000F97BF /* Constants.swift */,
 				6212854422C9BF4B000F97BF /* Assets.xcassets */,
-				6212854622C9BF4B000F97BF /* LaunchScreen.storyboard */,
 				6212854922C9BF4B000F97BF /* Info.plist */,
 			);
 			path = Carfax_iOS_Challenge_Sheeyam;
+			sourceTree = "<group>";
+		};
+		6212855322C9CCC3000F97BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6212854122C9BF4A000F97BF /* Main.storyboard */,
+				6212854622C9BF4B000F97BF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6212855422C9CCE6000F97BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6212854F22C9BF75000F97BF /* VehiclesViewController.swift */,
+				6212855122C9C014000F97BF /* VehicleCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6212855922C9D8E4000F97BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6212855A22C9DCC8000F97BF /* Vehicles.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7149E99652C3D576A8A4EE74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				231B6B7A94974CC302B98B0A /* Pods-Carfax_iOS_Challenge_Sheeyam.debug.xcconfig */,
+				A7E376551D9CF2E9E5776C29 /* Pods-Carfax_iOS_Challenge_Sheeyam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6CA8522C3592FC038318959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2F831BE3DC418772590E370 /* Pods_Carfax_iOS_Challenge_Sheeyam.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6212854C22C9BF4B000F97BF /* Build configuration list for PBXNativeTarget "Carfax_iOS_Challenge_Sheeyam" */;
 			buildPhases = (
+				D62B9688D98DA393E08F9F21 /* [CP] Check Pods Manifest.lock */,
 				6212853622C9BF4A000F97BF /* Sources */,
 				6212853722C9BF4A000F97BF /* Frameworks */,
 				6212853822C9BF4A000F97BF /* Resources */,
+				E24A94F619497FA5D80FFA15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +189,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D62B9688D98DA393E08F9F21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carfax_iOS_Challenge_Sheeyam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E24A94F619497FA5D80FFA15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Carfax_iOS_Challenge_Sheeyam/Pods-Carfax_iOS_Challenge_Sheeyam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carfax_iOS_Challenge_Sheeyam/Pods-Carfax_iOS_Challenge_Sheeyam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6212853622C9BF4A000F97BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6212854022C9BF4A000F97BF /* ViewController.swift in Sources */,
+				6212855222C9C014000F97BF /* VehicleCell.swift in Sources */,
 				6212853E22C9BF4A000F97BF /* AppDelegate.swift in Sources */,
+				6212855B22C9DCC8000F97BF /* Vehicles.swift in Sources */,
+				6212855022C9BF75000F97BF /* VehiclesViewController.swift in Sources */,
+				6212855622C9CE25000F97BF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +391,7 @@
 		};
 		6212854D22C9BF4B000F97BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231B6B7A94974CC302B98B0A /* Pods-Carfax_iOS_Challenge_Sheeyam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +410,7 @@
 		};
 		6212854E22C9BF4B000F97BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E376551D9CF2E9E5776C29 /* Pods-Carfax_iOS_Challenge_Sheeyam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

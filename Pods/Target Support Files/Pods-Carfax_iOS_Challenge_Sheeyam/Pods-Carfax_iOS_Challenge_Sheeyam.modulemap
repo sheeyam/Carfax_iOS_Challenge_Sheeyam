@@ -1,0 +1,6 @@
+framework module Pods_Carfax_iOS_Challenge_Sheeyam {
+  umbrella header "Pods-Carfax_iOS_Challenge_Sheeyam-umbrella.h"
+
+  export *
+  module * { export * }
+}
