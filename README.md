@@ -29,7 +29,7 @@ The Applicaion displays a list of vehicles with the following information:
   - Added Swipe Down Service Call
   
 # Limitations
-  - Unavalability of a real device so didn't check the calling feature but the code logic is added.
+  - Unavailability of a real device so didn't check the calling feature but the code logic is added.
 
 # Author
   - Sheeyam Shellvacumar
