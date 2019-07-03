@@ -43,7 +43,7 @@ class VehicleCell: UITableViewCell {
         self.VehicleYearMakeModel.text = "\(vehicleData.vehicleYear) \(vehicleData.vehicleMake) \(vehicleData.vehicleModel) \(trim)"
         
         // vehicle - Price | Location | mileage Details
-        let boldListPriceText  = "$\(vehicleData.vehicleListPrice)"
+        let boldListPriceText  = "$\(ListPriceFormatter(price: vehicleData.vehicleListPrice))"
         let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 17)]
         let attributedString = NSMutableAttributedString(string:boldListPriceText, attributes:attrs)
         

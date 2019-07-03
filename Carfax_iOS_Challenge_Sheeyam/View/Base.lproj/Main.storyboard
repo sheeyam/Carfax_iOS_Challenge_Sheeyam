@@ -55,6 +55,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="j0j-ev-RlS"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <state key="normal" title="1234567890"/>
                                                     <connections>
                                                         <action selector="makeCallToDealer:" destination="rHi-OC-Zes" eventType="touchUpInside" id="53t-v8-6vq"/>

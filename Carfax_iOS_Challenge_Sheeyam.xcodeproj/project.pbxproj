@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6208D56C22CC55D200D5E49D /* ListPriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6208D56B22CC55D200D5E49D /* ListPriceFormatter.swift */; };
 		6212853E22C9BF4A000F97BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212853D22C9BF4A000F97BF /* AppDelegate.swift */; };
 		6212854322C9BF4A000F97BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6212854122C9BF4A000F97BF /* Main.storyboard */; };
 		6212854522C9BF4B000F97BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6212854422C9BF4B000F97BF /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		231B6B7A94974CC302B98B0A /* Pods-Carfax_iOS_Challenge_Sheeyam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carfax_iOS_Challenge_Sheeyam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carfax_iOS_Challenge_Sheeyam/Pods-Carfax_iOS_Challenge_Sheeyam.debug.xcconfig"; sourceTree = "<group>"; };
+		6208D56B22CC55D200D5E49D /* ListPriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPriceFormatter.swift; sourceTree = "<group>"; };
 		6212853A22C9BF4A000F97BF /* Carfax_iOS_Challenge_Sheeyam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carfax_iOS_Challenge_Sheeyam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6212853D22C9BF4A000F97BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6212854222C9BF4A000F97BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				62A4974322CBC7B900170D42 /* PhoneNumberFormatter.swift */,
 				62A4974522CBDC4600170D42 /* SuffixNumber.swift */,
+				6208D56B22CC55D200D5E49D /* ListPriceFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				6212855B22C9DCC8000F97BF /* Vehicle.swift in Sources */,
 				6212855022C9BF75000F97BF /* VehiclesViewController.swift in Sources */,
 				62A4974422CBC7B900170D42 /* PhoneNumberFormatter.swift in Sources */,
+				6208D56C22CC55D200D5E49D /* ListPriceFormatter.swift in Sources */,
 				6212855622C9CE25000F97BF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
