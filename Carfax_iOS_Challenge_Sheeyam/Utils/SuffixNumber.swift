@@ -14,6 +14,7 @@ extension Double {
     }
 }
 
+// logic to add suffix to the numbers
 func formatNumber(_ n: Int) -> String {
     
     let num = abs(Double(n))

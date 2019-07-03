@@ -8,6 +8,7 @@
 
 import Foundation
 
+// logic to format list price
 func ListPriceFormatter(price: Int) -> String {
     let formatter = NumberFormatter()
     formatter.numberStyle = NumberFormatter.Style.decimal

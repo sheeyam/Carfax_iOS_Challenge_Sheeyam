@@ -10,6 +10,7 @@ import Foundation
 
 class Vehicle {
     
+    // variables
     private var  _vehicleYear: Int!
     private var  _vehicleMake: String!
     private var  _vehicleModel: String!
@@ -132,7 +133,5 @@ class Vehicle {
         if let vehicleImage = vehiclesDict["images"]?["baseUrl"] as? String {
             self._vehicleImage = vehicleImage
         }
-        
     }
-    
 }

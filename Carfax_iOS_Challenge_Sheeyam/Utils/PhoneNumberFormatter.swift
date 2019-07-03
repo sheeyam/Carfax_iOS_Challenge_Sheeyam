@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Phonenumber Formatter Logic
 func PhoneNumberFormatter(phoneNumber sourcePhoneNumber: String) -> String? {
     // Remove any character that is not a number
     let numbersOnly = sourcePhoneNumber.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
