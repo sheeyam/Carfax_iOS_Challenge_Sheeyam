@@ -14,6 +14,5 @@ func ListPriceFormatter(price: Int) -> String {
     
     let amount = price
     let formattedString = formatter.string(for: amount)
-    print(String(describing: formattedString))
     return formattedString ?? String(price)
 }
